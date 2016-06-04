@@ -1,0 +1,140 @@
+URxvt*font: xft:Ubuntu Mono derivative Powerline:pixelsize=19
+URxvt*boldFont: xft:Ubuntu Mono derivative Powerline:pixelsize=19
+URxvt*letterSpace: 0
+URxvt*allow_bold: true
+URxvt*inputMethod: ibus
+URxvt*preeditType: OnTheSpot
+URxvt*imLocale: ko_KR.UTF-8
+
+URxvt.transparent:   false
+URxvt.shading:       60
+
+! URXVT ENABLE LINK SUPPORT
+!------------------------------------------------
+
+URxvt.perl-ext-common: default,matcher,tabbedex,vtwheel,clipboard
+!tabbed
+URxvt.matcher.button:   1
+URxvt.perl-ext:      default,url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher:   /usr/bin/google-chrome
+URxvt.url-select.underline: true
+
+!disable the fucking bell
+URxvt.insecure: 			false
+
+! URXVT COPY PASTE SHORTCUTS
+!------------------------------------------------
+
+URxvt.keysym.M-c: 			perl:clipboard:copy
+URxvt.keysym.M-v: 			perl:clipboard:pasteq
+
+! URXVT SCROLLBAR AND CURSOR STYLE
+!------------------------------------------------
+
+URxvt*saveLines: 			300000
+URxvt.scrollBar: 			false
+!URxvt*scrollstyle:			plain
+URxvt*cursorBlink: 			false
+URxvt*cursorUnderline: 		true
+URxvt*cursorColor: 			#51c4d4
+
+! URXVT TABS
+!------------------------------------------------
+
+URxvt.tabbedex.autohide: 	yes
+URxvt.tabbedex.tabbar-fg: 	2
+URxvt.tabbedex.tabbar-bg: 	0
+URxvt.tabbedex.tab-fg:    	10
+URxvt.tabbedex.tab-bg:    	0
+URxvt.tabbedex.title: 		yes
+URxvt.tabbedex.new-button:  no
+
+! URXVT FULLSCREEN TOGGLE
+!------------------------------------------------
+
+! URxvt.keysym.F11: 			perl:fullscreen:switch
+! vim: ft=xdefaults
+#define base00 #2C3E50
+#define base01 #34495E
+#define base02 #7F8C8D
+#define base03 #95A5A6
+#define base04 #BDC3C7
+#define base05 #e0e0e0
+#define base06 #f5f5f5
+#define base07 #ECF0F1
+#define base08 #E74C3C
+#define base09 #E67E22
+#define base0A #F1C40F
+#define base0B #2ECC71
+#define base0C #1ABC9C
+#define base0D #3498DB
+#define base0E #9B59B6
+#define base0F #be643c
+
+*.foreground:   base05
+*.background:   #2f343f
+*.cursorColor:  base05
+
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+
+*.color8:       base03
+*.color9:       base08
+*.color10:      base0B
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
+*.color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! ! use 'shell' template to set these if necessary
+! *.color16:      base09
+! *.color17:      base0F
+! *.color18:      base01
+! *.color19:      base02
+! *.color20:      base04
+! *.color21:      base06
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+! Use extended color scheme
+  rofi.color-enabled:                  true
+! Color scheme for normal row
+  rofi.color-normal:                   #393939,#ffffff,#393939,#268bd2,#ffffff
+! Color scheme for urgent row
+  rofi.color-urgent:                   #393939,#f3843d,#393939,#268bd2,#ffc39c
+! Color scheme for active row
+  rofi.color-active:                   #393939,#268bd2,#393939,#268bd2,#205171
+! Color scheme window
+  rofi.color-window:                   #393939,#393939,#268bd2
+  rofi.opacity:						   70
+  rofi.font:						   Office code pro 20
+! Separator style (none, dash, solid)
+! rofi.separator-style:                solid
+! rofi -color-window:                  "#2f343f, #2f343f, #000000" -color-normal "#2f343f, #c1d1e0, #2f343f, #2f343f, #c1d1e0" -color-active "#ffffff, #ff02b0, #ffffff, #268bd2, #fdf6e3" -color-urgent "#fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3"
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+
+! Use extended color scheme
+! rofi.color-enabled:                  true
+! Color scheme for normal row
+! rofi.color-normal:                   argb:00000000, #1aa, argb:11FFFFFF, #1aa,#333
+! Color scheme for urgent row
+! rofi.color-urgent:                   argb:00000000, #f99, argb:11FFFFFF, #f99,#333
+! Color scheme for active row
+! rofi.color-active:                   argb:00000000, #aa1, argb:11FFFFFF, #aa1,#333
+! Color scheme window
+! rofi.color-window:                   argb:ee333333, #1aa,#1aa
+! Separator style (none, dash, solid)
+! rofi.separator-style:                none
