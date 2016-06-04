@@ -40,11 +40,11 @@ if [[ -n $(pgrep openvpn) ]]; then
 	vpn=true
 fi
 
-#bat=false
-#if [[ $(query_bat) -lt bat_thresh ]]: then
-#	converted=$converted"_vpn"
-#	bat=true
-#fi
+bat=false
+if (($(query_bat) < 50)); then
+	converted=$converted"_vpn"
+	bat=true
+fi
 
 # create the file, if it isn't cached
 if [[ ! -f $converted ]]; then
